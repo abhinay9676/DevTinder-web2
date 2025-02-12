@@ -4,7 +4,7 @@ import { BASE_URL } from '../utils/constants';
 import { useDispatch } from 'react-redux';
 import { removeUserRequest } from '../utils/requestSlice';
 
-const userCard = ({ user }) => {
+const UserCard = ({ user }) => {
   const { _id, firstName, lastName, age, gender, about, photoUrl } = user;
   const dispatch = useDispatch();
 
@@ -37,4 +37,4 @@ const userCard = ({ user }) => {
   );
 };
 
-export default userCard;
+export default UserCard;
