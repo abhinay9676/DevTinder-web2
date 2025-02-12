@@ -33,7 +33,7 @@ const Feed = () => {
 
     feed &&
     <div className="h-85 flex justify-center my-10">
-      {feed.length > 0 ? <UserCard user={feed[0]} /> : <p>No users found.</p>}
+      {feed.length > 0 ? <userCard user={feed[0]} /> : <p>No users found.</p>}
     </div>
   );
 };
